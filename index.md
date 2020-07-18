@@ -1,14 +1,15 @@
-## Simple Core Java application with Docker Container
-Demonstration of execution of core Java application into Docker container.
+## Simple Spring Boot application with Docker Container
+This project demonstrating the execution of Spring boot web application from Docker container.
 
 ### Overview:
-This document explains step by step how to create docker image and execute it into Docker container. For demonstration purpose, we use simple core Java project which build using Maven tool.
+This document explains step by step how to create docker image and execute it into Docker container. For demonstration purpose, we use simple spring boot web application project which build using Maven tool and Spring IO community.
 
 ### Technology Stack :
 
 | Technology | Version |
 | ------- | ------- |
 | Core Java | Adopt Open JDK 11.0 |
+| Spring Boot Web | 2.3.1.RELEASE |
 
 ### Tools :
 
@@ -16,22 +17,14 @@ This document explains step by step how to create docker image and execute it in
 | ------- | ------- |
 | Maven | Apache Maven 3.5.0 |
 
-### Core Java project with Maven tool:
+### Creating Spring Boot web application using https://start.spring.io/
 
-Command to create project from Maven tool, -
-```markdown
-mvn archetype:generate
-	-DgroupId={project-packaging}
-	-DartifactId={project-name}
-	-DarchetypeArtifactId={maven-template}
-	-DinteractiveMode=false
-```
-
-In a terminal Linux OR Mac OR command prompt (Windows), navigate to the folder you want to create the Java project and type above mentioned command. This tells Maven to generate a Java project from a Maven template. For example,
-
-```markdown
-mvn archetype:generate -DgroupId=com.ravaan.techky -DartifactId=simple-docker-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-```
+- Open 'https://start.spring.io/' URL into browser
+- Select spring boot version (By Default it is latest stable version)
+- Fill project metadata information
+- Add spring web and Dev Tool dependencies by clicking on 'Add Dependencies' button.
+  After setting all fields, your page looks like, -
+  ![spring_boot_application_creation](images/spring_boot_application_creation.png)
 
 ### Docker:
 You will get Docker informayion on [<i class="fa fa-external-link"></i>](/docker-documentation/) 
