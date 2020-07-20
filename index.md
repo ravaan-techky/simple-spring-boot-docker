@@ -17,7 +17,7 @@ This document explains step by step how to create docker image and execute it in
 | ------- | ------- |
 | Maven | Apache Maven 3.5.0 |
 
-### Creating Spring Boot web application using https://start.spring.io/
+### Creating Spring Boot web application using start spring.io
 
 - Open 'https://start.spring.io/' URL into browser
 - Select spring boot version (By Default it is latest stable version)
